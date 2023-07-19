@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev_example"
+  site-url: "https://ravennaro.github.io/nbdev_example"
+  description: "nbdev exemple"
+  repo-branch: main
+  repo-url: "https://github.com/ravennaro/nbdev_example"
