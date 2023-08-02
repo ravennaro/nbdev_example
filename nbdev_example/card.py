@@ -59,3 +59,9 @@ def __gt__(self:Card, a:Card): return (self.suit, self.rank)>(a.suit, a.rank)
 
 # %% ../nbs/00_cards.ipynb 1
 #|export card
+
+# %% ../nbs/00_cards.ipynb 1
+#|export card
+
+# %% ../nbs/00_cards.ipynb 1
+#|export card
