@@ -10,9 +10,4 @@ d = { 'settings': { 'branch': 'main',
                                     'nbdev_example.card.Card.__gt__': ('cards.html#card.__gt__', 'nbdev_example/card.py'),
                                     'nbdev_example.card.Card.__init__': ('cards.html#card.__init__', 'nbdev_example/card.py'),
                                     'nbdev_example.card.Card.__lt__': ('cards.html#card.__lt__', 'nbdev_example/card.py'),
-                                    'nbdev_example.card.Card.__str__': ('cards.html#card.__str__', 'nbdev_example/card.py')},
-            'nbdev_example.core': { 'nbdev_example.core.Deck': ('deckc.html#deck', 'nbdev_example/core.py'),
-                                    'nbdev_example.core.Deck.__contains__': ('deckc.html#deck.__contains__', 'nbdev_example/core.py'),
-                                    'nbdev_example.core.Deck.__init__': ('deckc.html#deck.__init__', 'nbdev_example/core.py'),
-                                    'nbdev_example.core.Deck.__len__': ('deckc.html#deck.__len__', 'nbdev_example/core.py'),
-                                    'nbdev_example.core.Deck.__str__': ('deckc.html#deck.__str__', 'nbdev_example/core.py')}}}
+                                    'nbdev_example.card.Card.__str__': ('cards.html#card.__str__', 'nbdev_example/card.py')}}}
