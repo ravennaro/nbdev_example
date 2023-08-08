@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "deckc.html",
+    "href": "deckc.html",
+    "title": "deck",
+    "section": "",
+    "text": "source\n\nDeck\n\n Deck ()\n\nA deck of 52 cards, not including jokers\nWhen we initially create a deck, all of the cards will be present:\n\ndeck = Deck()\ndeck\n\nA♣; 2♣; 3♣; 4♣; 5♣; 6♣; 7♣; 8♣; 9♣; 10♣; J♣; Q♣; K♣; A♦; 2♦; 3♦; 4♦; 5♦; 6♦; 7♦; 8♦; 9♦; 10♦; J♦; Q♦; K♦; A♥; 2♥; 3♥; 4♥; 5♥; 6♥; 7♥; 8♥; 9♥; 10♥; J♥; Q♥; K♥; A♠; 2♠; 3♠; 4♠; 5♠; 6♠; 7♠; 8♠; 9♠; 10♠; J♠; Q♠; K♠\n\n\nThat should be 52 cards.\n\ntest_eq(len(deck), 52)\n\nAs a reminder, these are the suits we defined for a Card:\n\nsuits\n\n['♣', '♦', '♥', '♠']\n\n\nWe can check if the ‘Ace of Clubs’ is in the deck:\n\nCard(1,1) in deck\n\nTrue\n\n\n\nsource\n\n\nDeck.pop\n\n Deck.pop (idx:int=-1)\n\nRemove one card of the deck\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nidx\nint\n-1\nThe index of the card to remove, defaulting to the last one\n\n\n\n\ndeck = Deck()\ntest_eq(deck.pop(), Card(3,13)) # K♠\n\nThere are 51 cards left in the deck now.\n\ntest_eq(len(deck), 51)\n\n\nsource\n\n\nDeck.remove\n\n Deck.remove (card:nbdev_example.card.Card)\n\nRemoves ‘card’ from the deck or raises exception if is not there\n\n\n\n\nType\nDetails\n\n\n\n\ncard\nCard\nCard to remove\n\n\n\n\ncard23 = Card(2,3)\ndeck.remove(card23)\n\nassert card23 not in deck\n\n\nsource\n\n\nDeck.shuffle\n\n Deck.shuffle ()\n\nShuffles the cards in this deck\n\nsource\n\n\ndraw_n\n\n draw_n (n:int, replace:bool=True)\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nn\nint\n\nnumber of cards to draw\n\n\nreplace\nbool\nTrue\nwhether pr not draw with replacement\n\n\n\n\ndraw_n(13, replace=False)\n\n[9♥, 3♦, 2♠, 6♣, 6♥, 5♦, 9♣, 4♦, 6♦, 2♣, 6♠, 2♥, J♥]"
+  },
+  {
+    "objectID": "cards.html",
+    "href": "cards.html",
+    "title": "card–A bascic playing card",
+    "section": "",
+    "text": "We will be using numbers to represent playing card clubs and ranks. These are the suits:\nsuits\n\n['♣', '♦', '♥', '♠']\nFor instance the suit at index 0:\nsuits[0]\n\n'♣'\nThese are the ranks:\nranks\n\n[None, 'A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\nFor instance the rank at index ‘1’ (note tahat there isn’t a playing card at position 0, since we want the ranks to match the indices where possible)\nranks[1]\n\n'A'\nHere’s an example of creating and displaying a card:\nc = Card(suit=1, rank=3)\nc\n\n3♦\nsource"
+  },
+  {
+    "objectID": "cards.html#comparison-operators",
+    "href": "cards.html#comparison-operators",
+    "title": "card–A bascic playing card",
+    "section": "Comparison operators",
+    "text": "Comparison operators\nEquality, less than, and greater than work on the rank and suit indices:\nFor instance, here’s a test of equality…\n\ntest_eq(Card(suit=1, rank=3), Card(suit=1, rank=3))\ntest_ne(Card(suit=2, rank=3), Card(suit=1, rank=3))\ntest_ne(Card(suit=1, rank=2), Card(suit=1, rank=3))\n\n… a test of &lt; …\n\nassert Card(suit=1, rank=3)&lt;Card(suit=2, rank=3)\n\n… and finaly of &gt;\n\nassert Card(suit=3, rank=3)&gt;Card(suit=2, rank=3)\nassert not Card(suit=1, rank=3)&gt;Card(suit=2, rank=3)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev_example",
+    "section": "",
+    "text": "A reproduction of the nbdev tutorial youtube on https://www.youtube.com/watch?v=l7zS8Ld4_iA&t=2564s&ab_channel=JeremyHoward"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev_example",
+    "section": "Install",
+    "text": "Install\npip install nbdev_example"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev_example",
+    "section": "How to use",
+    "text": "How to use\nthis lib provides a card class you can use to create, display and compare playing cards\n\nCard(1,3)\n\n3♦"
+  }
+]
